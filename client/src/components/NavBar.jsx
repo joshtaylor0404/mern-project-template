@@ -1,7 +1,7 @@
-import Auth from "../../utils/auth";
+import Auth from "../utils/auth";
 import { Link } from "react-router-dom";
 
-function Nav() {
+function NavBar() {
 
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -41,10 +41,7 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
-        </Link>
+        <Link to="/">React Project Template</Link>
       </h1>
 
       <nav>
@@ -54,4 +51,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavBar;
