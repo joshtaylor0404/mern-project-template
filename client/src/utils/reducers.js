@@ -1,30 +1,17 @@
-import {
-  UPDATE_PRODUCTS,
-  UPDATE_CATEGORIES,
-  UPDATE_CURRENT_CATEGORY
-} from "./actions";
+// import { ACTION_NAME_GOES_HERE } from "./actions";
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case UPDATE_PRODUCTS:
+    case ACTION_NAME_GOES_HERE:
       return {
         ...state,
-        products: [...action.products],
+        // never modify the state directly.
+        // always return a copy of state plus your modifications
       };
-
-    case UPDATE_CATEGORIES:
-      return {
-        ...state,
-        categories: [...action.categories],
-      };
-
-    case UPDATE_CURRENT_CATEGORY:
-      return {
-        ...state,
-        currentCategory: action.currentCategory
-      }
 
     default:
+      // In case no actions are matched, always include a default
+      // case in your switch statement that returns the state.
       return state;
   }
 };
