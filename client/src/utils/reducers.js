@@ -1,8 +1,8 @@
-// import { ACTION_NAME_GOES_HERE } from "./actions";
+import { DEMO_ACTION } from './actions';
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case ACTION_NAME_GOES_HERE:
+    case DEMO_ACTION:
       return {
         ...state,
         // never modify the state directly.

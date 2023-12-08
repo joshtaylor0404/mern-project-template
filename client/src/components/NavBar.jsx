@@ -1,5 +1,5 @@
-import Auth from "../utils/auth";
-import { Link } from "react-router-dom";
+import Auth from '../utils/auth';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const showNavigation = () => {

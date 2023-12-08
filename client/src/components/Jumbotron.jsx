@@ -3,9 +3,9 @@ const Jumbotron = ({ children }) => {
     <div
       style={{
         height: 560,
-        clear: "both",
+        clear: 'both',
         paddingTop: 120,
-        textAlign: "center",
+        textAlign: 'center',
       }}
     >
       {children}
